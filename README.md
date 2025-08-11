@@ -24,12 +24,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/ivan-develops/testimonials-grid-section-main](https://github.com/ivan-develops/testimonials-grid-section-main)
+- Live Site URL: [https://ivan-develops.github.io/testimonials-grid-section-main/](https://ivan-develops.github.io/testimonials-grid-section-main/)
 
 ## My process
 
@@ -37,13 +37,18 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
+- CSS Flexbox
 - CSS Grid
 - Mobile-first workflow
 
 ### What I learned
 
+I learned about the `outline` and `outline-offset` properties that formed the inner borders of user profile photos:
 
+``
+outline: 2px solid var(--Purple-300);
+outline-offset: -2px;
+``
 
 ### Useful resources
 
@@ -53,4 +58,4 @@ Users should be able to:
 
 - Website - [https://github.com/ivan-develops](https://github.com/ivan-develops)
 - LinkedIn - [@ivanvargaso](https://www.linkedin.com/in/ivanvargaso/)
-- Frontend Mentor - [@IvanInterfaceDeveloper](https://www.frontendmentor.io/profile/IvanInterfaceDeveloper)
+- Frontend Mentor - [@ivan-develops](https://www.frontendmentor.io/profile/ivan-develops)

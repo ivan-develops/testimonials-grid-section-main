@@ -36,6 +36,7 @@ body {
         display: grid;
         gap: 1em;
         border-radius: 0.5em;
+        min-width: 22.5em;
 
         .user {
             display: flex;
@@ -66,17 +67,28 @@ body {
             font-size: 1.5em;
             font-weight: 600;
         }
+        .comment {
+            line-height: 140%;
+            font-size: clamp(1em, 0.8em + 0.5vw, 1.2em);
+        }
+
         &:nth-child(1){
             background: var(--Purple-500);
-            color: var(--White);
+            color: var(--Grey-100);
         }
         &:nth-child(2){
             background: var(--Grey-500);
             color: var(--Grey-100);
+            .user .user__photo {
+                outline: none;
+            }
         }
         &:nth-child(3){
             background: var(--White);
             color: var(--Grey-500);
+            .user .user__photo {
+                outline: none;
+            }
         }
         &:nth-child(4){
             background: var(--Dark-blue);
@@ -85,6 +97,50 @@ body {
         &:nth-child(5){
             background: var(--Purple-200);
             color: var(--Grey-500);
+            outline: none;
+            .user .user__photo {
+                outline: none;
+            }
         }
+    }
+}
+
+@media screen and (min-width: 1000px /* 1300px */) {
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        width: 80%;
+        max-width: 1258px;;
+
+        .card {
+
+            &:nth-child(1){
+                grid-column: span 2;
+                order: 1;
+            }
+            &:nth-child(2){
+                grid-column: span 1;
+                order: 2;
+            }
+            &:nth-child(3){
+                grid-row: span 1;
+                order: 4;
+            }
+            &:nth-child(4){
+                grid-column: span 2;
+                order: 5;
+            }
+            &:nth-child(5){
+                grid-row: span 2;
+                order: 3; 
+            }
+        }
+
     }
 }
