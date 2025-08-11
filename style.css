@@ -123,6 +123,11 @@ body {
             &:nth-child(1){
                 grid-column: span 2;
                 order: 1;
+                /* fondo comilla*/
+                background-image: url("images/bg-pattern-quotation.svg");
+                background-position: right 15% top 0em;
+                background-repeat: no-repeat;
+
             }
             &:nth-child(2){
                 grid-column: span 1;
@@ -141,6 +146,5 @@ body {
                 order: 3; 
             }
         }
-
     }
 }
